@@ -8,7 +8,7 @@ describe('#Validator', () => {
             firstName: {type: 'string'},
             lastName: {type: 'string'},
             hair: {type: 'object'},
-            favoriteFoods: {type: 'array'},
+            favoriteFoods: {type: 'object'},
             married: {type: 'boolean'},
             kids: {type: 'number'}
         }
@@ -62,6 +62,7 @@ describe('#Validator', () => {
 
     test('object validity checked against schema', () => {
         expect(valInstance.isValid(data)).toEqual(true);
+        expect(valInstance.isValid(123)).toEqual(false);
     });
 });
 

@@ -29,14 +29,22 @@ class Validator {
   isFunction(input) {}
 
   isTruthy(input) {
-    return input === true;
+    return input === true
   }
 
-  // Vinicio - checks an object against a schema
-  // isValid(data, schema)
-  // isValidObject in my demo code
   isValid(data) {
-
+    let validity = true;
+    if (typeof(data) !== 'object'){
+      validity = false;
+    }
+    Object.keys(data).forEach(property => {
+      if (typeof (data[property]) !== this.schema.fields[property].type) {
+        console.log('DATA:', data[property], '____ TYPE OF DATA: ', typeof (data[property]), '______ TYPE OF SCHEMA: ', this.schema.fields[property].type);
+        console.log('NOT A MATCH');
+        validity = false;
+      }
+    });
+    return validity;
   }
 }
 
