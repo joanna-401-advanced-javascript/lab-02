@@ -26,6 +26,10 @@ describe('#Validator', () => {
         "kids": 3
     }
 
+    const count = () => {
+        let counter = 1;
+    }
+
     let valInstance = new Validator(schema);
 
     test('string type validation', () => {
@@ -53,7 +57,10 @@ describe('#Validator', () => {
         expect(valInstance.isNumber(data.married)).toEqual(false);
     });
 
-    //function type validation here?
+    test('function type validation', () => {
+        expect(valInstance.isFunction(count)).toEqual(true);
+        expect(valInstance.isFunction(data.hair)).toEqual(false);
+    });
 
     test('truthy type validation', () => {
         expect(valInstance.isTruthy(data.married)).toEqual(true);

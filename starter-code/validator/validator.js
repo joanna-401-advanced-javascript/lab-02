@@ -26,7 +26,9 @@ class Validator {
     return typeof input === 'number';
   }
 
-  isFunction(input) {}
+  isFunction(input) {
+    return typeof input === 'function';
+  }
 
   isTruthy(input) {
     return input === true
@@ -39,8 +41,6 @@ class Validator {
     }
     Object.keys(data).forEach(property => {
       if (typeof (data[property]) !== this.schema.fields[property].type) {
-        console.log('DATA:', data[property], '____ TYPE OF DATA: ', typeof (data[property]), '______ TYPE OF SCHEMA: ', this.schema.fields[property].type);
-        console.log('NOT A MATCH');
         validity = false;
       }
     });
