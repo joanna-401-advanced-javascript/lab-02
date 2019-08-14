@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62fb9764-c37d-4402-9d71-00fad92fac73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../class-01/lab/starter-code/__tests__/validator.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../class-01/lab/starter-code/__tests__/validator.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class-01/lab/starter-code/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../class-01/lab/starter-code/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../class-01/lab/starter-code/lib/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../class-01/lab/starter-code/lib/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,16 +13,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PNidiv0fbwZMBljuYoGXlLfJCO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -38,6 +42,41 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Jest.#Validator.object validity checked against schema">
+    <configuration name="#Validator" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/starter-code/validator/__test__/validator.test.js" />
+      <test-names>
+        <test-name value="#Validator" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="#Validator.object validity checked against schema" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/starter-code/validator/__test__/validator.test.js" />
+      <test-names>
+        <test-name value="#Validator" />
+        <test-name value="object validity checked against schema" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.#Validator.object validity checked against schema" />
+        <item itemvalue="Jest.#Validator" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -49,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565721043707</updated>
       <workItem from="1565721044817" duration="1400000" />
+      <workItem from="1565726169933" duration="14436000" />
     </task>
     <servers />
   </component>
@@ -60,10 +100,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab_02$_Validator.info" NAME="#Validator Coverage Results" MODIFIED="1565728326451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
