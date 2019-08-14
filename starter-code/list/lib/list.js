@@ -6,6 +6,9 @@ class List {
     this.data = {};
   }
 
+  /***
+   * This method allows you to reset the index numbers for a list
+   */
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
       acc[idx] = this.data[val];
@@ -28,6 +31,10 @@ class List {
     return this.length;
   }
 
+  /***
+   * This method allows you to remove the last element of the list
+   * @returns {undefined|*} - The item that was removed
+   */
   pop() {
     if ( ! this.length ) { return undefined; }
     let item = this.data[this.length - 1];
@@ -36,6 +43,10 @@ class List {
     return item;
   }
 
+  /***
+   * This method allows you to remove the first element of the list
+   * @returns {undefined|*} - The item that was removed
+   */
   shift() {
     if ( ! this.data[0] ) { return undefined; }
     let item = this.data[0];
@@ -44,12 +55,21 @@ class List {
     return item;
   }
 
+  /***
+   * This method allows you to add an element to the beginning of the list
+   * @param item - The new item to be added to the beginning of the list
+   * @returns {number} - The new length of the list
+   */
   unshift(item) {
     this.data[-1] = item;
     this.reindex();
     return this.length;
   }
 
+  /***
+   * This method allows you to perform a callback function on each item of a list
+   * @param callback - The function that is performed on each item of the list
+   */
   forEach(callback) {
     if ( this.length ) {
       for (let i = 0; i <= this.length - 1; i++) {
@@ -58,6 +78,11 @@ class List {
     }
   }
 
+  /***
+   * This method allows you to perform a callback function on each element of the list and puts the results in a new list
+   * @param callback - The function to be performed
+   * @returns {undefined|List} - The new list that is generated
+   */
   map(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -67,6 +92,11 @@ class List {
     return result;
   }
 
+  /***
+   * This method allows you to perform a callback function on every list item, and returns a new list with only the list items that passed the callback function
+   * @param callback - The function to be performed
+   * @returns {undefined|List} - The new list that is generated containing only the filtered list items
+   */
   filter(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -79,10 +109,10 @@ class List {
   }
 
   /***
-   * This function well evaluate a single value from the entire collection
-   * @param callback {function} - the function to evaluate each element of the list
-   * @param state {any} - the initial value to start from
-   * @returns {any} - the final state after the callback completes
+   * This method allows you to perform the callback function on every list item, and evaluates into a single value
+   * @param callback - The function to be performed on each element of the list
+   * @param state - The initial value that is changed every time the callback function is performed
+   * @returns {undefined|*} - The output from the final state
    */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }
