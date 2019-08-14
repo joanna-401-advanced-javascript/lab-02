@@ -21,7 +21,7 @@ class List {
 
   /***
    * This method allows you to add a new element at the end of the list
-   * @param item - The new item to be added to the end of the list
+   * @param item - The new item to be added
    * @returns {number} - The new length of the list
    */
   push(item) {
@@ -109,10 +109,10 @@ class List {
   }
 
   /***
-   * This method allows you to perform the callback function on every list item, and results in a single value
-   * @param callback - The function to be performed
-   * @param state - The value that is changed every time the callback function is performed
-   * @returns {undefined|*} - The output from state
+   * This method allows you to perform the callback function on every list item, and evaluates into a single value
+   * @param callback - The function to be performed on each element of the list
+   * @param state - The initial value that is changed every time the callback function is performed
+   * @returns {undefined|*} - The output from the final state
    */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }

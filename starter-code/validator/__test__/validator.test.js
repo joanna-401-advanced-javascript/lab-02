@@ -30,7 +30,7 @@ describe('#Validator', () => {
         let counter = 1;
     }
 
-    let valInstance = new Validator(schema);
+    const valInstance = new Validator(schema);
 
     test('string type validation', () => {
         expect(valInstance.isString(data.firstName)).toEqual(true);
